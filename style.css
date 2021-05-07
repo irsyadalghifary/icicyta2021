@@ -1,0 +1,92 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    height: 945px;
+    background: radial-gradient(50% 50% at 50% 50%, #4C1E70 0%, #2A1E70 100%), url('asset/bigwave.svg') no-repeat center 395px;
+    background-blend-mode: screen;
+    background-size: 100%;
+    padding-top: 165px;
+}
+
+h6 {
+    width: 501px;
+    height: 41px;
+    background: linear-gradient(90deg, #4B3D9B 0%, #ED3A8D 118.38%);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    letter-spacing: 0.095em;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.c-square {
+    width: 145px;
+    height: 145px;
+    background: linear-gradient(155.93deg, #7F6AFF 11.97%, #1F1A3C 170.08%);
+    border-radius: 8px;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.small-text {
+    color: #FF75B5;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.about {
+    height: 858px;
+}
+
+.speakers {
+    height: 1000px;
+    background: radial-gradient(50% 50% at 50% 50%, #4C1E70 0%, #2A1E70 100%), url('asset/smwave.svg') no-repeat center;
+    background-blend-mode: screen;
+    background-size: 100%;
+}
+
+.about h1 {
+    color: rgba(51, 51, 51, 0.8);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background: linear-gradient(136.9deg, rgba(237, 58, 141, 0.6) -23.94%, rgba(42, 30, 112, 0.6) 70.53%);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.speaker-title {
+    font-weight: 400;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.kotak {
+    height: 10px;
+    width: 100px;
+    background: #ED3A8D;
+    border-radius: 4px;
+}
