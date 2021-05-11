@@ -179,6 +179,7 @@ h1 {
 
 .venue {
   background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%);
+  margin-top: 900px;
 }
 
 @media only screen and (min-width: 922px) {
@@ -234,5 +235,13 @@ h1 {
   .paper {
     height: 1400px;
     background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%);
+  }
+
+  .price {
+    padding-left: 100px;
+  }
+
+  .venue {
+    margin-top: 0px;
   }
 }
