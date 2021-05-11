@@ -1,287 +1,514 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>ICICyTA 2021 - Cybernetic Technology for Suitainable Well-being</title>
-    <link rel="icon" href="asset/XshSp2yckF.png" type="image/icon type">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      ICICyTA 2021 - Cybernetic Technology for Suitainable Well-being
+    </title>
+    <link rel="icon" href="asset/XshSp2yckF.png" type="image/icon type" />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top" style="background-color: #2C1E70;">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="asset/XshSp2yckF.png" alt="" width="36" height="36">
-                ICICyTA 2021
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">Conference</a>
-                    <a class="nav-link ms-4" href="#">Speakers</a>
-                    <a class="nav-link ms-4" href="#">Topics</a>
-                    <a class="nav-link ms-4" href="#">Pricing & Registration</a>
-                </div>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top"
+      style="background-color: #2c1e70"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="asset/XshSp2yckF.png" alt="" width="36" height="36" />
+          ICICyTA 2021
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="#">Conference</a>
+            <a class="nav-link ms-4" href="#">Speakers</a>
+            <a class="nav-link ms-4" href="#">Topics</a>
+            <a class="nav-link ms-4" href="#">Pricing & Registration</a>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- Akhir Navbar -->
 
     <!-- Hero -->
     <section class="hero">
-        <div class="container text-white">
-            <h6 class="mb-5">DECEMBER 1 & 2 2021 - VIRTUAL CONFERENCE (ONLINE)</h6>
-            <h1 class="mb-5">1st International Conference on<br>Intelligent Cybernetics Technology<br>& Applications
-                2021 (ICICyTA)
-            </h1>
-            <p class="mb-5">Countdown to the event:</p>
-            <!-- Countdown Timer -->
-            <div class="countdown d-flex">
-                <div class="c-square text-center " id="c-days"></div>
-                <div class="c-square text-center ms-4" id="c-hours"></div>
-                <div class="c-square text-center ms-4" id="c-minutes"></div>
-                <div class="c-square text-center ms-4" id="c-seconds"></div>
-            </div>
-            <!-- Akhir Countdown Timer -->
+      <div class="container text-white">
+        <h6 class="mb-5">DECEMBER 1 & 2 2021 - VIRTUAL CONFERENCE (ONLINE)</h6>
+        <h1 class="mb-5">
+          1st International Conference on<br />Intelligent Cybernetics
+          Technology<br />& Applications 2021 (ICICyTA)
+        </h1>
+        <p class="mb-5">Countdown to the event:</p>
+        <!-- Countdown Timer -->
+        <div class="countdown d-flex" id="countdown">
+          <div class="c-square text-center" id="c-days"></div>
+          <div class="c-square text-center ms-4" id="c-hours"></div>
+          <div class="c-square text-center ms-4" id="c-minutes"></div>
+          <div class="c-square text-center ms-4" id="c-seconds"></div>
         </div>
+        <!-- Akhir Countdown Timer -->
+      </div>
     </section>
     <!-- Akhir Hero -->
 
     <!-- About -->
     <section class="about">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col">
-                    <div class="row mb-5">
-                        <div class="col d-flex">
-                            <img src="asset/Vector.svg" alt="" class="pe-3">
-                            <h5>About<br>Conference</h5>
-                        </div>
-                    </div>
-                    <img src="asset/Group 8.png" alt="" class="mt-5">
-                </div>
-                <div class="col mt-5">
-                    <div class="row mb-5">
-                        <div class="col d-flex">
-                            <img src="asset/conference.svg" alt="" class="pe-5">
-                            <h1>What is<br>ICICyTA 2021?</h1>
-                        </div>
-                    </div>
-                    <p class="mt-3">The 1st International Virtual Conference in Intelligent Cybernetics Technology &
-                        Applications
-                        2021 (ICyTA 2021) with a theme “Cybernetic Technology for Sustainable Well-being” will be held
-                        on December 1-2, 2021. This virtual conference is organized by Human Centric Engineering Telkom
-                        University (Tel-U) and Pusat Penelitian Teknologi Informasi dan Komunikasi (PPTIK) Institut
-                        Teknologi Bandung (ITB) Indonesia, with co-organization by Institute of Autonomous System (IAS)
-                        / Institute of Health and Analytics (IHA), Universiti Teknologi PETRONAS (UTP), Malaysia. ICyTA
-                        2021 invites researchers to share their knowledge, especially in the field of cybernetics which
-                        also includes computational intelligence, Internet of Things (IoT), biomedical engineering, and
-                        applications.
-                        The conference will be sponsored by IEEE Indonesian Section</p>
-                </div>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col">
+            <div class="row mb-5">
+              <div class="col d-flex">
+                <img src="asset/Vector.svg" alt="" class="pe-3" />
+                <h5>About<br />Conference</h5>
+              </div>
             </div>
+            <img src="asset/Group 8.png" alt="" class="mt-5" />
+          </div>
+          <div class="col mt-5">
+            <div class="row mb-5">
+              <div class="col d-flex">
+                <img src="asset/conference.svg" alt="" class="pe-5" />
+                <h1>What is<br />ICICyTA 2021?</h1>
+              </div>
+            </div>
+            <p class="mt-3">
+              The 1st International Virtual Conference in Intelligent
+              Cybernetics Technology & Applications 2021 (ICyTA 2021) with a
+              theme “Cybernetic Technology for Sustainable Well-being” will be
+              held on December 1-2, 2021. This virtual conference is organized
+              by Human Centric Engineering Telkom University (Tel-U) and Pusat
+              Penelitian Teknologi Informasi dan Komunikasi (PPTIK) Institut
+              Teknologi Bandung (ITB) Indonesia, with co-organization by
+              Institute of Autonomous System (IAS) / Institute of Health and
+              Analytics (IHA), Universiti Teknologi PETRONAS (UTP), Malaysia.
+              ICyTA 2021 invites researchers to share their knowledge,
+              especially in the field of cybernetics which also includes
+              computational intelligence, Internet of Things (IoT), biomedical
+              engineering, and applications. The conference will be sponsored by
+              IEEE Indonesian Section
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Akhir About -->
 
     <!-- Speakers -->
     <section class="speakers position-relative">
-        <div class="container">
-            <div class="row mb-5 mt-3">
-                <div class="col">
-                    <div class="row mb-5 mt-5">
-                        <div class="col d-flex">
-                            <img src="asset/Vector.svg" alt="" class="pe-3">
-                            <h5 class="text-white">Our<br>Speakers</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col text-white">
-                    <div class="row mb-5 mt-5">
-                        <div class="col d-flex">
-                            <img src="asset/podcast-media 1.svg" alt="" class="pe-5">
-                            <h1>Conference<br>Speakers</h1>
-                        </div>
-                    </div>
-                    <p class="mt-3 ms-5">Learn Straight From The Expert</p>
-                </div>
+      <div class="container">
+        <div class="row mb-5 mt-3">
+          <div class="col">
+            <div class="row mb-5 mt-5">
+              <div class="col d-flex">
+                <img src="asset/Vector.svg" alt="" class="pe-3" />
+                <h5 class="text-white">Our<br />Speakers</h5>
+              </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4 mt-3 position-relative">
-                <div class="col">
-                    <div class="card border-0">
-                        <img src="asset/p1.png" class="card-img" alt="...">
-                        <div class="card-img-overlay text-white d-flex flex-column ps-4 overlay">
-                            <h3 class="card-title mt-auto">Thomas Bangalter</h3>
-                            <p class="speaker-title">Head of #4Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0">
-                        <img src="asset/p2.png" class="card-img" alt="...">
-                        <div class="card-img-overlay text-white d-flex flex-column ps-4 overlay">
-                            <h3 class="card-title mt-auto">Tisa Brown</h3>
-                            <p class="speaker-title">Head of #4Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0">
-                        <img src="asset/p3.png" class="card-img" alt="...">
-                        <div class="card-img-overlay text-white d-flex flex-column ps-4 overlay">
-                            <h3 class="card-title mt-auto">Melinda Lindu</h3>
-                            <p class="speaker-title">Head of #4Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0">
-                        <img src="asset/p4.png" class="card-img" alt="...">
-                        <div class="card-img-overlay text-white d-flex flex-column ps-4 overlay">
-                            <h3 class="card-title mt-auto">Matt McGuire</h3>
-                            <p class="speaker-title">Head of #4Company</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col text-white">
+            <div class="row mb-5 mt-5">
+              <div class="col d-flex">
+                <img src="asset/podcast-media 1.svg" alt="" class="pe-5" />
+                <h1>Conference<br />Speakers</h1>
+              </div>
             </div>
+            <p class="mt-3 ms-5">Learn Straight From The Expert</p>
+          </div>
         </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4 mt-3 position-relative">
+          <div class="col">
+            <div class="card border-0">
+              <img src="asset/p1.png" class="card-img" alt="..." />
+              <div
+                class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+              >
+                <h3 class="card-title mt-auto">Thomas Bangalter</h3>
+                <p class="speaker-title">Head of #4Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="asset/p2.png" class="card-img" alt="..." />
+              <div
+                class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+              >
+                <h3 class="card-title mt-auto">Tisa Brown</h3>
+                <p class="speaker-title">Head of #4Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="asset/p3.png" class="card-img" alt="..." />
+              <div
+                class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+              >
+                <h3 class="card-title mt-auto">Melinda Lindu</h3>
+                <p class="speaker-title">Head of #4Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="asset/p4.png" class="card-img" alt="..." />
+              <div
+                class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+              >
+                <h3 class="card-title mt-auto">Matt McGuire</h3>
+                <p class="speaker-title">Head of #4Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Akhir Speakers -->
 
     <!-- Topics -->
     <section class="topics">
-        <div class="container">
-            <div class="row mb-5 mt-3">
-                <div class="col">
-                    <div class="row mb-5 mt-5">
-                        <div class="col d-flex">
-                            <img src="asset/Vector.svg" alt="" class="pe-3">
-                            <h5>Topics</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row mb-5 mt-5">
-                        <div class="col d-flex">
-                            <img src="asset/syllabus 1.svg" alt="" class="pe-5">
-                            <h1>The Topics</h1>
-                        </div>
-                    </div>
-                    <p class="mt-3 ms-5">There will be four conference tracks including,
-                        <br>but not limited to the followings:</p>
-                </div>
+      <div class="container">
+        <div class="row mb-5 mt-3">
+          <div class="col">
+            <div class="row mb-5 mt-5">
+              <div class="col d-flex">
+                <img src="asset/Vector.svg" alt="" class="pe-3" />
+                <h5>Topics</h5>
+              </div>
             </div>
-            <div class="row mb-5">
-                <div class="col ms-5">
-                    <h3>Cybernetics &
-                        <br>Biomedical Engineering</h3>
-                    <div class="kotak mt-2 mb-3"></div>
-                    <ul>
-                        <li>Software Engineering & Cognitive Science</li>
-                        <li>Requirement Engineering</li>
-                        <li>Software Product Line Engineering</li>
-                        <li>Testing Verification & Validation</li>
-                        <li>Data Mining for Software Engineering</li>
-                        <li>Empirical Software Engineering</li>
-                        <li>Image Processing/Pattern Recognition</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>Cybernetics &
-                        <br>Biomedical Engineering</h3>
-                    <div class="kotak mt-2 mb-3"></div>
-                    <ul>
-                        <li>Software Engineering & Cognitive Science</li>
-                        <li>Requirement Engineering</li>
-                        <li>Software Product Line Engineering</li>
-                        <li>Testing Verification & Validation</li>
-                        <li>Data Mining for Software Engineering</li>
-                        <li>Empirical Software Engineering</li>
-                        <li>Image Processing/Pattern Recognition</li>
-                    </ul>
-                </div>
+          </div>
+          <div class="col">
+            <div class="row mb-5 mt-5">
+              <div class="col d-flex">
+                <img src="asset/syllabus 1.svg" alt="" class="pe-5" />
+                <h1>The Topics</h1>
+              </div>
             </div>
-            <div class="row mt-5">
-                <div class="col ms-5">
-                    <h3>Cybernetics &
-                        <br>Biomedical Engineering</h3>
-                    <div class="kotak mt-2 mb-3"></div>
-                    <ul>
-                        <li>Software Engineering & Cognitive Science</li>
-                        <li>Requirement Engineering</li>
-                        <li>Software Product Line Engineering</li>
-                        <li>Testing Verification & Validation</li>
-                        <li>Data Mining for Software Engineering</li>
-                        <li>Empirical Software Engineering</li>
-                        <li>Image Processing/Pattern Recognition</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>Cybernetics &
-                        <br>Biomedical Engineering</h3>
-                    <div class="kotak mt-2 mb-3"></div>
-                    <ul>
-                        <li>Software Engineering & Cognitive Science</li>
-                        <li>Requirement Engineering</li>
-                        <li>Software Product Line Engineering</li>
-                        <li>Testing Verification & Validation</li>
-                        <li>Data Mining for Software Engineering</li>
-                        <li>Empirical Software Engineering</li>
-                        <li>Image Processing/Pattern Recognition</li>
-                    </ul>
-                </div>
-            </div>
+            <p class="mt-3 ms-5">
+              There will be four conference tracks including, <br />but not
+              limited to the followings:
+            </p>
+          </div>
         </div>
+        <div class="row mb-5">
+          <div class="col ms-5">
+            <h3>Cybernetics & <br />Biomedical Engineering</h3>
+            <div class="kotak mt-2 mb-3"></div>
+            <ul>
+              <li>Software Engineering & Cognitive Science</li>
+              <li>Requirement Engineering</li>
+              <li>Software Product Line Engineering</li>
+              <li>Testing Verification & Validation</li>
+              <li>Data Mining for Software Engineering</li>
+              <li>Empirical Software Engineering</li>
+              <li>Image Processing/Pattern Recognition</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Cybernetics Applications</h3>
+            <div class="kotak mt-2 mb-3"></div>
+            <ul>
+              <li>Information Systems</li>
+              <li>Human Computer Interaction</li>
+              <li>Enterprise Information System</li>
+              <li>E-Commerce/E-Business</li>
+              <li>Business Intelligence</li>
+              <li>Augmented Reality & Virtual Reality</li>
+              <li>Gamification</li>
+              <li>Education</li>
+              <li>E-Business</li>
+              <li>Healthcare</li>
+              <li>Work From Home</li>
+              <li>Border Control</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col ms-5">
+            <h3>Internet of Things (IoT) & <br />Cybernetics</h3>
+            <div class="kotak mt-2 mb-3"></div>
+            <ul>
+              <li>Blockchain & Cyber security</li>
+              <li>Internet of Things (IoT)</li>
+              <li>Network system</li>
+              <li>Cloud computing</li>
+              <li>Complex Network</li>
+              <li>Cloud, IoT and Robotics Integration</li>
+              <li>Machine Vision</li>
+              <li>Knowledge Acquisition in Intelligent</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Computational Intelligence & <br />Cybernetics</h3>
+            <div class="kotak mt-2 mb-3"></div>
+            <ul>
+              <li>Big Data & Data Analytics</li>
+              <li>Computational Intelligence</li>
+              <li>Biometric Systems and Bioinformatics</li>
+              <li>Artificial Life</li>
+              <li>Expert and Knowledge-Based Systems</li>
+              <li>Soft Computing</li>
+              <li>Machine Learning</li>
+              <li>Evolutionary Computing</li>
+              <li>Fuzzy Logic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Akhir Topics -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
+    <!-- Paper And Registration -->
+    <section class="paper mt-5">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col d-flex" style="margin-top: 100px">
+            <img src="asset/syllabus 1.svg" alt="" class="pe-5" />
+            <h1>Paper & Registration</h1>
+          </div>
+          <div class="caption">
+            <p class="mt-5">
+              All accepted papers will be published after the conference in IEEE
+              Xplore. Selected papers (with significant additional material)
+              will be submitted for publication in a high impact journal
+              (additional journal publication cost may incur).
+            </p>
+            <ul>
+              <li>
+                All papers must be original and not simultaneously submitted to
+                another journal or conference.
+              </li>
+              <li>
+                Prospective authors are invited to submit complete source papers
+                (including figures, tables, and references in LaTeX or doc/docx
+                format) according to the IEEE conference template standards
+                which can be found on the page:
+              </li>
+              <a href="" class="btn-paper d-inline-block">Template</a>
+            </ul>
+            <ul>
+              <li>
+                Please make the necessary changes based on the reviewer’s
+                comments and suggestions. The Reviewer Response Form must be
+                filled accordingly. Now we would like your cooperation with the
+                double check of your paper.
+              </li>
+              <a href="" class="btn-paper d-inline-block">Revision Form</a>
+            </ul>
+            <ul>
+              <li>
+                For the paper final version: Please strictly use and follow IEEE
+                template Manuscripts (Word Format):
+              </li>
+              <a href="" class="btn-paper d-inline-block">Download Template </a>
+            </ul>
+            <ul>
+              <li>
+                Please ensure the <span class="highlight">maximum page</span> of
+                your final paper is <span class="highlight">6-pages.</span>
+              </li>
+              <li>
+                All the papers have to go through the file conversion (become
+                PDF file) offered by IEEE PDF eXpress. You can refer to the link
+                here: https://ieee-pdf-express.org/ . You will need the
+                Conference ID to log in, which is:
+                <span class="highlight">51048X</span>. After file conversion
+                (become PDF file) offered by IEEE PDF eXpress successfully. You
+                can upload the PDF file paper final version in Easychair at
+                ‘Final manuscript’, or by updating the manuscript there with the
+                Final Version.
+              </li>
+              <li>
+                Please take notice that the Final Paper should be submitted by
+                <span class="highlight"
+                  >October 1st, 2021 (early bird) and November 1st, 2021
+                  (regular).</span
+                >
+              </li>
+              <li>
+                Each paper should have a registration before ——– Please keep the
+                proof of payment/transfer. Any paper without registration will
+                be dropped automatically. Please refer to this link:
+                https://icidm2020.pptik.id/registration/
+              </li>
+              <li>
+                The ICICYTA 2021 uses a no-show policy. In case of an
+                author/co-author no show (i.e., the author/co-author does not
+                present their paper), then the paper will NOT be submitted to
+                IEEE Xplore. No refund will be granted in this case.
+              </li>
+              <li>
+                Please
+                <span class="highlight">prepare a video of presentation</span>
+                (15 minutes duration, MP4 format, and 720p minimum resolution)
+                for a backup plan in case of connectivity problems during the
+                Virtual Conference and upload the video to ICICYTA 2021 storage
+                via this “Upload Video” Button below with file format name
+                [PaperNumber_1stAuthor_Title.mp4]
+                <span class="highlight"
+                  >before October 1st, 2021 (early bird) and November 1st, 2021
+                  (regular).</span
+                >
+              </li>
+              <a href="" class="btn-paper d-inline-block">Upload Video</a>
+            </ul>
+            <ul>
+              <li>
+                With all your cooperation, the presentation schedule would be
+                announced on ———.
+              </li>
+              <li>
+                Please send the Reviewer Response Form, e-Copyright (signed
+                publication agreement) and proof of payment/transfer to
+                <span class="highlight">icidm2020@lskk.ee.itb.ac.id</span> using
+                Subject Title format [DOCUMENT PaperNumber].
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Paper And Registration -->
+
+    <!-- Pricing -->
+    <section class="pricing">
+      <div class="container">
+        <div class="row text-center" style="margin-top: 120px">
+          <div class="col d-flex justify-content-center">
+            <img src="asset/price-list 1.svg" alt="" class="pe-5" />
+            <h1>Pricing</h1>
+          </div>
+          <p class="mt-5">
+            The fee structure for ICICYTA 2021 are as follows*:
+          </p>
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-paper">Category</button>
+              <button class="btn btn-paper-outlined ms-4">early Bird</button>
+            </div>
+            <div
+              class="row row-cols-1 row-cols-md-4 g-4 mt-3 position-relative"
+            >
+              <div class="col">
+                <div class="card border-0">
+                  <img src="asset/p1.png" class="card-img" alt="..." />
+                  <div
+                    class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+                  >
+                    <h3 class="card-title mt-auto">Thomas Bangalter</h3>
+                    <p class="speaker-title">Head of #4Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="asset/p2.png" class="card-img" alt="..." />
+                  <div
+                    class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+                  >
+                    <h3 class="card-title mt-auto">Tisa Brown</h3>
+                    <p class="speaker-title">Head of #4Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="asset/p3.png" class="card-img" alt="..." />
+                  <div
+                    class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+                  >
+                    <h3 class="card-title mt-auto">Melinda Lindu</h3>
+                    <p class="speaker-title">Head of #4Company</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="asset/p4.png" class="card-img" alt="..." />
+                  <div
+                    class="card-img-overlay text-white d-flex flex-column ps-4 overlay"
+                  >
+                    <h3 class="card-title mt-auto">Matt McGuire</h3>
+                    <p class="speaker-title">Head of #4Company</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Pricing -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("May 28, 2021 10:20:00").getTime();
+      // Set the date we're counting down to
+      var countDownDate = new Date("May 10, 2021 20:00:00").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
 
-            // Get today's date and time
-            var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("c-days").innerHTML =
+          days + "<div class='small-text'>Days</div>";
+        document.getElementById("c-hours").innerHTML =
+          hours + "<div class='small-text'>Hours</div>";
+        document.getElementById("c-minutes").innerHTML =
+          minutes + "<div class='small-text'>Minutes</div>";
+        document.getElementById("c-seconds").innerHTML =
+          seconds + "<div class='small-text'>Seconds</div>";
 
-            // Display the result in the element with id="demo"
-            document.getElementById("c-days").innerHTML = days + "<div class='small-text'>Days</div>";
-            document.getElementById("c-hours").innerHTML = hours + "<div class='small-text'>Hours</div>";
-            document.getElementById("c-minutes").innerHTML = minutes + "<div class='small-text'>Minutes</div>";
-            document.getElementById("c-seconds").innerHTML = seconds + "<div class='small-text'>Seconds</div>";
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "Today is the day";
-            }
-        }, 1000);
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML =
+            "<h1>Today is The Day <span style='color:#ED3A8D;'>!</span></h1>";
+        }
+      }, 1000);
     </script>
-</body>
-
+  </body>
 </html>
