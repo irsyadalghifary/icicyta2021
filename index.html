@@ -1,628 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>
-      ICICyTA 2021 - Cybernetic Technology for Suitainable Well-being
-    </title>
-    <link rel="icon" href="asset/XshSp2yckF.png" type="image/icon type" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top"
-      style="background-color: #2c1e70"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="asset/XshSp2yckF.png" alt="" width="36" height="36" />
-          ICICyTA 2021
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="#">Conference</a>
-            <a class="nav-link ms-4" href="#speakers">Speakers</a>
-            <a class="nav-link ms-4" href="#topics">Topics</a>
-            <a class="nav-link ms-4" href="#pricing">Registration & Pricing</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>
+    ICICyTA 2021 - Cybernetic Technology for Suitainable Well-being
+  </title>
+  <link rel="icon" href="asset/XshSp2yckF.png" type="image/icon type" />
+</head>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container text-white">
-        <div data-aos="fade-right" data-aos-duration="1500">
-          <h6 class="mb-5">
-            DECEMBER 1 & 2 2021 - VIRTUAL CONFERENCE (ONLINE)
-          </h6>
-          <h1 class="mb-5">
-            1st International Conference on<br />Intelligent Cybernetics
-            Technology<br />& Applications 2021 (ICICyTA)
-          </h1>
-          <p class="mb-5">Countdown to the event:</p>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top" style="background-color: #2c1e70">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="asset/XshSp2yckF.png" alt="" width="36" height="36" />
+        ICICyTA 2021
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="#">Conference</a>
+          <a class="nav-link ms-4" href="#speakers">Speakers</a>
+          <a class="nav-link ms-4" href="#topics">Topics</a>
+          <a class="nav-link ms-4" href="#pricing">Registration & Pricing</a>
+          <a class="nav-link ms-4" href="comitee.html">Committee</a>
         </div>
-        <!-- Countdown Timer -->
-        <div
-          class="countdown d-flex pb-5"
-          id="countdown"
-          data-aos="fade-up"
-          data-aos-delay="1000"
-        >
-          <div class="c-square text-center" id="c-days"></div>
-          <div class="c-square text-center ms-4" id="c-hours"></div>
-          <div class="c-square text-center ms-4" id="c-minutes"></div>
-          <div class="c-square text-center ms-4" id="c-seconds"></div>
-        </div>
-        <!-- Akhir Countdown Timer -->
       </div>
-    </section>
-    <!-- Akhir Hero -->
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
 
-    <!-- About -->
-    <section class="about">
-      <div class="container">
-        <div class="row mt-5">
-          <div class="col">
-            <div class="row mb-5">
-              <div class="col d-flex">
-                <img src="asset/Vector.svg" alt="" class="pe-3" />
-                <h5>About<br />Conference</h5>
-              </div>
-            </div>
-            <div data-aos="fade-up">
-              <img src="asset/Group 8.png" alt="" class="mt-5" />
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container text-white">
+      <div data-aos="fade-right" data-aos-duration="1500">
+        <h6 class="mb-5">
+          DECEMBER 1 & 2 2021 - VIRTUAL CONFERENCE (ONLINE)
+        </h6>
+        <h1 class="mb-5">
+          1st International Conference on<br />Intelligent Cybernetics
+          Technology<br />& Applications 2021 (ICICyTA)
+        </h1>
+        <p class="mb-5">Countdown to the event:</p>
+      </div>
+      <!-- Countdown Timer -->
+      <div class="countdown d-flex pb-5" id="countdown" data-aos="fade-up" data-aos-delay="1000">
+        <div class="c-square text-center" id="c-days"></div>
+        <div class="c-square text-center ms-4" id="c-hours"></div>
+        <div class="c-square text-center ms-4" id="c-minutes"></div>
+        <div class="c-square text-center ms-4" id="c-seconds"></div>
+      </div>
+      <!-- Akhir Countdown Timer -->
+    </div>
+  </section>
+  <!-- Akhir Hero -->
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <div class="row mb-5">
+            <div class="col d-flex">
+              <img src="asset/Vector.svg" alt="" class="pe-3" />
+              <h5>About<br />Conference</h5>
             </div>
           </div>
-          <div class="col mt-5">
-            <div class="row mb-5">
-              <div class="col d-flex">
-                <img src="asset/conference.svg" alt="" class="pe-5" />
-                <h1>What is<br />ICICyTA 2021?</h1>
-              </div>
-            </div>
-            <p class="mt-3">
-              The 1st International Virtual Conference in Intelligent
-              Cybernetics Technology & Applications 2021 (ICyTA 2021) with a
-              theme “Cybernetic Technology for Sustainable Well-being” will be
-              held on December 1-2, 2021. This virtual conference is organized
-              by Human Centric Engineering Telkom University (Tel-U) and Pusat
-              Penelitian Teknologi Informasi dan Komunikasi (PPTIK) Institut
-              Teknologi Bandung (ITB) Indonesia, with co-organization by
-              Institute of Autonomous System (IAS) / Institute of Health and
-              Analytics (IHA), Universiti Teknologi PETRONAS (UTP), Malaysia.
-              ICyTA 2021 invites researchers to share their knowledge,
-              especially in the field of cybernetics which also includes
-              computational intelligence, Internet of Things (IoT), biomedical
-              engineering, and applications. The conference will be sponsored by
-              IEEE Indonesian Section
-            </p>
+          <div data-aos="fade-up">
+            <img src="asset/Group 8.png" alt="" class="mt-5" />
           </div>
+        </div>
+        <div class="col mt-5">
+          <div class="row mb-5">
+            <div class="col d-flex">
+              <img src="asset/conference.svg" alt="" class="pe-5" />
+              <h1>What is<br />ICICyTA 2021?</h1>
+            </div>
+          </div>
+          <p class="mt-3">
+            The 1st International Virtual Conference in Intelligent
+            Cybernetics Technology & Applications 2021 (ICyTA 2021) with a
+            theme “Cybernetic Technology for Sustainable Well-being” will be
+            held on December 1-2, 2021. This virtual conference is organized
+            by Human Centric Engineering Telkom University (Tel-U) and Pusat
+            Penelitian Teknologi Informasi dan Komunikasi (PPTIK) Institut
+            Teknologi Bandung (ITB) Indonesia, with co-organization by
+            Institute of Autonomous System (IAS) / Institute of Health and
+            Analytics (IHA), Universiti Teknologi PETRONAS (UTP), Malaysia.
+            ICyTA 2021 invites researchers to share their knowledge,
+            especially in the field of cybernetics which also includes
+            computational intelligence, Internet of Things (IoT), biomedical
+            engineering, and applications. The conference will be sponsored by
+            IEEE Indonesian Section
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Akhir About -->
-    <!-- Speakers -->
-    <section class="speakers position-relative" id="speakers">
-      <div class="container">
-        <div class="row mb-5 mt-3">
-          <div class="col">
-            <div class="row mb-5 mt-5">
-              <div class="col d-flex">
-                <img src="asset/Vector.svg" alt="" class="pe-3" />
-                <h5 class="text-white">Our<br />Speakers</h5>
-              </div>
+    </div>
+  </section>
+  <!-- Akhir About -->
+  <!-- Speakers -->
+  <section class="speakers position-relative" id="speakers">
+    <div class="container">
+      <div class="row mb-5 mt-3">
+        <div class="col">
+          <div class="row mb-5 mt-5">
+            <div class="col d-flex">
+              <img src="asset/Vector.svg" alt="" class="pe-3" />
+              <h5 class="text-white">Our<br />Speakers</h5>
             </div>
-          </div>
-          <div class="col text-white">
-            <div class="row mb-5 mt-5">
-              <div class="col d-flex">
-                <img src="asset/podcast-media 1.svg" alt="" class="pe-5" />
-                <h1>Conference<br />Speakers</h1>
-              </div>
-            </div>
-            <p class="mt-3 ms-5">Learn Straight From The Expert</p>
           </div>
         </div>
-        <div
-          class="row row-cols-1 row-cols-md-4 g-4 mt-3"
-          style="padding-left: 100px"
-        >
-          <div class="col" data-aos="fade-up" data-aos-delay="0">
-            <div class="card border-0">
-              <img src="asset/p1.png" class="card-img" alt="..." />
-              <div
-                class="
+        <div class="col text-white">
+          <div class="row mb-5 mt-5">
+            <div class="col d-flex">
+              <img src="asset/podcast-media 1.svg" alt="" class="pe-5" />
+              <h1>Conference<br />Speakers</h1>
+            </div>
+          </div>
+          <p class="mt-3 ms-5">Learn Straight From The Expert</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-3" style="padding-left: 100px">
+        <div class="col" data-aos="fade-up" data-aos-delay="0">
+          <div class="card border-0">
+            <img src="asset/p1.png" class="card-img" alt="..." />
+            <div class="
                   card-img-overlay
                   text-white
                   d-flex
                   flex-column
                   ps-4
                   overlay
-                "
-              >
-                <h3 class="card-title mt-auto">Thomas Bangalter</h3>
-                <p class="speaker-title">Head of #4Company</p>
-              </div>
+                ">
+              <h3 class="card-title mt-auto">Thomas Bangalter</h3>
+              <p class="speaker-title">Head of #4Company</p>
             </div>
           </div>
-          <div class="col" data-aos="fade-up" data-aos-delay="100">
-            <div class="card border-0">
-              <img src="asset/p2.png" class="card-img" alt="..." />
-              <div
-                class="
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border-0">
+            <img src="asset/p2.png" class="card-img" alt="..." />
+            <div class="
                   card-img-overlay
                   text-white
                   d-flex
                   flex-column
                   ps-4
                   overlay
-                "
-              >
-                <h3 class="card-title mt-auto">Tisa Brown</h3>
-                <p class="speaker-title">Head of #4Company</p>
-              </div>
+                ">
+              <h3 class="card-title mt-auto">Tisa Brown</h3>
+              <p class="speaker-title">Head of #4Company</p>
             </div>
           </div>
-          <div class="col" data-aos="fade-up" data-aos-delay="200">
-            <div class="card border-0">
-              <img src="asset/p3.png" class="card-img" alt="..." />
-              <div
-                class="
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card border-0">
+            <img src="asset/p3.png" class="card-img" alt="..." />
+            <div class="
                   card-img-overlay
                   text-white
                   d-flex
                   flex-column
                   ps-4
                   overlay
-                "
-              >
-                <h3 class="card-title mt-auto">Melinda Lindu</h3>
-                <p class="speaker-title">Head of #4Company</p>
-              </div>
+                ">
+              <h3 class="card-title mt-auto">Melinda Lindu</h3>
+              <p class="speaker-title">Head of #4Company</p>
             </div>
           </div>
-          <div class="col" data-aos="fade-up" data-aos-delay="300">
-            <div class="card border-0">
-              <img src="asset/p4.png" class="card-img" alt="..." />
-              <div
-                class="
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <div class="card border-0">
+            <img src="asset/p4.png" class="card-img" alt="..." />
+            <div class="
                   card-img-overlay
                   text-white
                   d-flex
                   flex-column
                   ps-4
                   overlay
-                "
-              >
-                <h3 class="card-title mt-auto">Matt McGuire</h3>
-                <p class="speaker-title">Head of #4Company</p>
-              </div>
+                ">
+              <h3 class="card-title mt-auto">Matt McGuire</h3>
+              <p class="speaker-title">Head of #4Company</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Akhir Speakers -->
-    <!-- Topics -->
-    <section class="topics" id="topics">
-      <div class="container">
-        <div class="row mb-5 mt-3">
-          <div class="col">
-            <div class="row mb-5 mt-5">
-              <div class="col d-flex">
-                <img src="asset/Vector.svg" alt="" class="pe-3" />
-                <h5>Topics</h5>
-              </div>
+    </div>
+  </section>
+  <!-- Akhir Speakers -->
+  <!-- Topics -->
+  <section class="topics" id="topics">
+    <div class="container">
+      <div class="row mb-5 mt-3">
+        <div class="col">
+          <div class="row mb-5 mt-5">
+            <div class="col d-flex">
+              <img src="asset/Vector.svg" alt="" class="pe-3" />
+              <h5>Topics</h5>
             </div>
           </div>
-          <div class="col">
-            <div class="row mb-5 mt-5">
-              <div class="col d-flex">
-                <img src="asset/syllabus 1.svg" alt="" class="pe-5" />
-                <h1>The Topics</h1>
-              </div>
+        </div>
+        <div class="col">
+          <div class="row mb-5 mt-5">
+            <div class="col d-flex">
+              <img src="asset/syllabus 1.svg" alt="" class="pe-5" />
+              <h1>The Topics</h1>
             </div>
-            <p class="mt-3 ms-5">
-              There will be four conference tracks including, <br />but not
-              limited to the followings:
-            </p>
           </div>
-        </div>
-        <div class="row mb-5" data-aos="fade-up">
-          <div class="col ms-5">
-            <h3>Cybernetics & <br />Biomedical Engineering</h3>
-            <div class="kotak mt-2 mb-3"></div>
-            <ul>
-              <li>Software Engineering & Cognitive Science</li>
-              <li>Requirement Engineering</li>
-              <li>Software Product Line Engineering</li>
-              <li>Testing Verification & Validation</li>
-              <li>Data Mining for Software Engineering</li>
-              <li>Empirical Software Engineering</li>
-              <li>Image Processing/Pattern Recognition</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Cybernetics Applications</h3>
-            <div class="kotak mt-2 mb-3"></div>
-            <ul>
-              <li>Information Systems</li>
-              <li>Human Computer Interaction</li>
-              <li>Enterprise Information System</li>
-              <li>E-Commerce/E-Business</li>
-              <li>Business Intelligence</li>
-              <li>Augmented Reality & Virtual Reality</li>
-              <li>Gamification</li>
-              <li>Education</li>
-              <li>E-Business</li>
-              <li>Healthcare</li>
-              <li>Work From Home</li>
-              <li>Border Control</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mt-5" data-aos="fade-up">
-          <div class="col ms-5">
-            <h3>Internet of Things (IoT) & <br />Cybernetics</h3>
-            <div class="kotak mt-2 mb-3"></div>
-            <ul>
-              <li>Blockchain & Cyber security</li>
-              <li>Internet of Things (IoT)</li>
-              <li>Network system</li>
-              <li>Cloud computing</li>
-              <li>Complex Network</li>
-              <li>Cloud, IoT and Robotics Integration</li>
-              <li>Machine Vision</li>
-              <li>Knowledge Acquisition in Intelligent</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Computational Intelligence & <br />Cybernetics</h3>
-            <div class="kotak mt-2 mb-3"></div>
-            <ul>
-              <li>Big Data & Data Analytics</li>
-              <li>Computational Intelligence</li>
-              <li>Biometric Systems and Bioinformatics</li>
-              <li>Artificial Life</li>
-              <li>Expert and Knowledge-Based Systems</li>
-              <li>Soft Computing</li>
-              <li>Machine Learning</li>
-              <li>Evolutionary Computing</li>
-              <li>Fuzzy Logic</li>
-            </ul>
-          </div>
+          <p class="mt-3 ms-5">
+            There will be four conference tracks including, <br />but not
+            limited to the followings:
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Akhir Topics -->
-    <!-- Paper And Registration -->
-    <section class="paper mt-5" id="pricing">
-      <div class="container text-white">
-        <div class="row">
-          <div class="col d-flex" style="margin-top: 100px">
-            <img src="asset/syllabus 1.svg" alt="" class="pe-5" />
-            <h1>Paper & Registration</h1>
-          </div>
-          <div class="caption">
-            <p class="mt-5">
-              All accepted papers will be published after the conference in IEEE
-              Xplore. Selected papers (with significant additional material)
-              will be submitted for publication in a high impact journal
-              (additional journal publication cost may incur).
-            </p>
-            <ul>
-              <li>
-                All papers must be original and not simultaneously submitted to
-                another journal or conference.
-              </li>
-              <li>
-                Prospective authors are invited to submit complete source papers
-                (including figures, tables, and references in LaTeX or doc/docx
-                format) according to the IEEE conference template standards
-                which can be found on the page:
-              </li>
-              <a href="" class="btn-paper d-inline-block">Template</a>
-            </ul>
-            <ul>
-              <li>
-                Please make the necessary changes based on the reviewer’s
-                comments and suggestions. The Reviewer Response Form must be
-                filled accordingly. Now we would like your cooperation with the
-                double check of your paper.
-              </li>
-              <a href="" class="btn-paper d-inline-block">Revision Form</a>
-            </ul>
-            <ul>
-              <li>
-                For the paper final version: Please strictly use and follow IEEE
-                template Manuscripts (Word Format):
-              </li>
-              <a href="" class="btn-paper d-inline-block">Download Template </a>
-            </ul>
-            <ul>
-              <li>
-                Please ensure the <span class="highlight">maximum page</span> of
-                your final paper is <span class="highlight">6-pages.</span>
-              </li>
-              <li>
-                All the papers have to go through the file conversion (become
-                PDF file) offered by IEEE PDF eXpress. You can refer to the link
-                here: https://ieee-pdf-express.org/ . You will need the
-                Conference ID to log in, which is:
-                <span class="highlight">51048X</span>. After file conversion
-                (become PDF file) offered by IEEE PDF eXpress successfully. You
-                can upload the PDF file paper final version in Easychair at
-                ‘Final manuscript’, or by updating the manuscript there with the
-                Final Version.
-              </li>
-              <li>
-                Please take notice that the Final Paper should be submitted by
-                <span class="highlight"
-                  >October 1st, 2021 (early bird) and November 1st, 2021
-                  (regular).</span
-                >
-              </li>
-              <li>
-                Each paper should have a registration before ——– Please keep the
-                proof of payment/transfer. Any paper without registration will
-                be dropped automatically. Please refer to this link:
-                https://icidm2020.pptik.id/registration/
-              </li>
-              <li>
-                The ICICYTA 2021 uses a no-show policy. In case of an
-                author/co-author no show (i.e., the author/co-author does not
-                present their paper), then the paper will NOT be submitted to
-                IEEE Xplore. No refund will be granted in this case.
-              </li>
-              <li>
-                Please
-                <span class="highlight">prepare a video of presentation</span>
-                (15 minutes duration, MP4 format, and 720p minimum resolution)
-                for a backup plan in case of connectivity problems during the
-                Virtual Conference and upload the video to ICICYTA 2021 storage
-                via this “Upload Video” Button below with file format name
-                [PaperNumber_1stAuthor_Title.mp4]
-                <span class="highlight"
-                  >before October 1st, 2021 (early bird) and November 1st, 2021
-                  (regular).</span
-                >
-              </li>
-              <a href="" class="btn-paper d-inline-block">Upload Video</a>
-            </ul>
-            <ul>
-              <li>
-                With all your cooperation, the presentation schedule would be
-                announced on ———.
-              </li>
-              <li>
-                Please send the Reviewer Response Form, e-Copyright (signed
-                publication agreement) and proof of payment/transfer to
-                <span class="highlight">icidm2020@lskk.ee.itb.ac.id</span> using
-                Subject Title format [DOCUMENT PaperNumber].
-              </li>
-            </ul>
-          </div>
+      <div class="row mb-5" data-aos="fade-up">
+        <div class="col ms-5">
+          <h3>Cybernetics & <br />Biomedical Engineering</h3>
+          <div class="kotak mt-2 mb-3"></div>
+          <ul>
+            <li>Software Engineering & Cognitive Science</li>
+            <li>Requirement Engineering</li>
+            <li>Software Product Line Engineering</li>
+            <li>Testing Verification & Validation</li>
+            <li>Data Mining for Software Engineering</li>
+            <li>Empirical Software Engineering</li>
+            <li>Image Processing/Pattern Recognition</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Cybernetics Applications</h3>
+          <div class="kotak mt-2 mb-3"></div>
+          <ul>
+            <li>Information Systems</li>
+            <li>Human Computer Interaction</li>
+            <li>Enterprise Information System</li>
+            <li>E-Commerce/E-Business</li>
+            <li>Business Intelligence</li>
+            <li>Augmented Reality & Virtual Reality</li>
+            <li>Gamification</li>
+            <li>Education</li>
+            <li>E-Business</li>
+            <li>Healthcare</li>
+            <li>Work From Home</li>
+            <li>Border Control</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- Akhir Paper And Registration -->
-    <!-- Pricing -->
-    <section class="pricing">
-      <div class="container">
-        <div class="row text-center mb-2" style="margin-top: 120px">
-          <div class="col d-flex justify-content-center">
-            <img src="asset/price-list 1.svg" alt="" class="pe-5" />
-            <h1>Pricing</h1>
-          </div>
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col ms-5">
+          <h3>Internet of Things (IoT) & <br />Cybernetics</h3>
+          <div class="kotak mt-2 mb-3"></div>
+          <ul>
+            <li>Blockchain & Cyber security</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Network system</li>
+            <li>Cloud computing</li>
+            <li>Complex Network</li>
+            <li>Cloud, IoT and Robotics Integration</li>
+            <li>Machine Vision</li>
+            <li>Knowledge Acquisition in Intelligent</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Computational Intelligence & <br />Cybernetics</h3>
+          <div class="kotak mt-2 mb-3"></div>
+          <ul>
+            <li>Big Data & Data Analytics</li>
+            <li>Computational Intelligence</li>
+            <li>Biometric Systems and Bioinformatics</li>
+            <li>Artificial Life</li>
+            <li>Expert and Knowledge-Based Systems</li>
+            <li>Soft Computing</li>
+            <li>Machine Learning</li>
+            <li>Evolutionary Computing</li>
+            <li>Fuzzy Logic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Topics -->
+  <!-- Paper And Registration -->
+  <section class="paper mt-5" id="pricing">
+    <div class="container text-white">
+      <div class="row">
+        <div class="col d-flex" style="margin-top: 100px">
+          <img src="asset/syllabus 1.svg" alt="" class="pe-5" />
+          <h1>Paper & Registration</h1>
+        </div>
+        <div class="caption">
           <p class="mt-5">
-            The fee structure for ICICYTA 2021 are as follows*:
+            All accepted papers will be published after the conference in IEEE
+            Xplore. Selected papers (with significant additional material)
+            will be submitted for publication in a high impact journal
+            (additional journal publication cost may incur).
           </p>
-          <div class="row">
-            <div class="col">
-              <button
-                class="tab tablinks"
-                onclick="openCard(event,'Category')"
-                id="defaultOpen"
-              >
-                Category
-              </button>
-              <button
-                class="tab ms-4 tablinks"
-                onclick="openCard(event,'Early Bird')"
-              >
-                early Bird
-              </button>
-            </div>
-            <!-- Category Card -->
-            <div
-              class="row row-cols-1 row-cols-md-4 g-4 tabcontent ms-auto"
-              id="Category"
-            >
-              <div class="col" data-aos="fade-up" data-aos-delay="0">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Akhir Category Card -->
-            <!-- Early Bird -->
-            <div
-              class="row row-cols-1 row-cols-md-4 g-4 tabcontent ms-auto"
-              id="Early Bird"
-            >
-              <div class="col" data-aos="fade-up" data-aos-delay="0">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="col" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100">
-                  <div class="card-body text-start my-5">
-                    <h5 class="text-white">Author<br />(Non Member)</h5>
-                    <div class="garis mb-2"></div>
-                    <h1 class="card-text text-uppercase">USD 170</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Akhir Early Bird -->
-          </div>
+          <ul>
+            <li>
+              All papers must be original and not simultaneously submitted to
+              another journal or conference.
+            </li>
+            <li>
+              Prospective authors are invited to submit complete source papers
+              (including figures, tables, and references in LaTeX or doc/docx
+              format) according to the IEEE conference template standards
+              which can be found on the page:
+            </li>
+            <a href="" class="btn-paper d-inline-block">Template</a>
+          </ul>
+          <ul>
+            <li>
+              Please make the necessary changes based on the reviewer’s
+              comments and suggestions. The Reviewer Response Form must be
+              filled accordingly. Now we would like your cooperation with the
+              double check of your paper.
+            </li>
+            <a href="" class="btn-paper d-inline-block">Revision Form</a>
+          </ul>
+          <ul>
+            <li>
+              For the paper final version: Please strictly use and follow IEEE
+              template Manuscripts (Word Format):
+            </li>
+            <a href="" class="btn-paper d-inline-block">Download Template </a>
+          </ul>
+          <ul>
+            <li>
+              Please ensure the <span class="highlight">maximum page</span> of
+              your final paper is <span class="highlight">6-pages.</span>
+            </li>
+            <li>
+              All the papers have to go through the file conversion (become
+              PDF file) offered by IEEE PDF eXpress. You can refer to the link
+              here: https://ieee-pdf-express.org/ . You will need the
+              Conference ID to log in, which is:
+              <span class="highlight">51048X</span>. After file conversion
+              (become PDF file) offered by IEEE PDF eXpress successfully. You
+              can upload the PDF file paper final version in Easychair at
+              ‘Final manuscript’, or by updating the manuscript there with the
+              Final Version.
+            </li>
+            <li>
+              Please take notice that the Final Paper should be submitted by
+              <span class="highlight">October 1st, 2021 (early bird) and November 1st, 2021
+                (regular).</span>
+            </li>
+            <li>
+              Each paper should have a registration before ——– Please keep the
+              proof of payment/transfer. Any paper without registration will
+              be dropped automatically. Please refer to this link:
+              https://icidm2020.pptik.id/registration/
+            </li>
+            <li>
+              The ICICYTA 2021 uses a no-show policy. In case of an
+              author/co-author no show (i.e., the author/co-author does not
+              present their paper), then the paper will NOT be submitted to
+              IEEE Xplore. No refund will be granted in this case.
+            </li>
+            <li>
+              Please
+              <span class="highlight">prepare a video of presentation</span>
+              (15 minutes duration, MP4 format, and 720p minimum resolution)
+              for a backup plan in case of connectivity problems during the
+              Virtual Conference and upload the video to ICICYTA 2021 storage
+              via this “Upload Video” Button below with file format name
+              [PaperNumber_1stAuthor_Title.mp4]
+              <span class="highlight">before October 1st, 2021 (early bird) and November 1st, 2021
+                (regular).</span>
+            </li>
+            <a href="" class="btn-paper d-inline-block">Upload Video</a>
+          </ul>
+          <ul>
+            <li>
+              With all your cooperation, the presentation schedule would be
+              announced on ———.
+            </li>
+            <li>
+              Please send the Reviewer Response Form, e-Copyright (signed
+              publication agreement) and proof of payment/transfer to
+              <span class="highlight">icidm2020@lskk.ee.itb.ac.id</span> using
+              Subject Title format [DOCUMENT PaperNumber].
+            </li>
+          </ul>
         </div>
-        <p>
-          *Including IEEE Proceeding costs, Excluding Journal Publication costs
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Paper And Registration -->
+  <!-- Pricing -->
+  <section class="pricing">
+    <div class="container">
+      <div class="row text-center mb-2" style="margin-top: 120px">
+        <div class="col d-flex justify-content-center">
+          <img src="asset/price-list 1.svg" alt="" class="pe-5" />
+          <h1>Pricing</h1>
+        </div>
+        <p class="mt-5">
+          The fee structure for ICICYTA 2021 are as follows*:
         </p>
-        <div class="caption price mt-5">
-          <p>
-            Payment should be made after acceptance by Bank Transfer to:
-            <br />“Bank Nasional Indonesia (BNI)”<br />Cabang (Branch) Perintis
-            Kemerdekaan<br />Virtual Account: 8321066202000041<br />Account
-            Holder Name: ICIDM 2020
-          </p>
-          <br />
-          <p>
-            or if there are problems with Virtual Account<br />Bank Name : Bank
-            Mandiri<br />Swift Code : BMRIIDJA<br />Beneficiary Name/Recipient
-            Name : Universitas Telkom<br />Beneficiary Bank Account No :
-            1310095019917 <br />Branch: Bank Mandiri KCP Bandung Martadinata
-            <br />Bank Address : Jl. R.E. Martadinata No.103. Kota Bandung, Jawa
-            Barat Indonesia 40115 <br />City: Bandung <br />Country: Indonesia
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Pricing -->
-    <!-- Venue + Contact -->
-    <section class="venue">
-      <div class="container">
         <div class="row">
-          <div class="col mt-5 text-white">
-            <h4>Important Update</h4>
-            <p>
-              Due to the pandemic of COVID-19, the conference will be held
-              online (International Virtual Conference).
-            </p>
-            <h5>Sponsored By:</h5>
-            <div class="mt-4">
-              <img class="mt-3" src="asset/XshSp2yckF.png" alt="" />
-              <img class="mt-3" src="asset/pptik.png" alt="" />
-              <img class="mt-3" src="asset/iha.png" alt="" />
-              <img class="mt-3" src="asset/ias.png" alt="" />
+          <div class="col">
+            <button class="tab tablinks" onclick="openCard(event,'Category')" id="defaultOpen">
+              Category
+            </button>
+            <button class="tab ms-4 tablinks" onclick="openCard(event,'Early Bird')">
+              early Bird
+            </button>
+          </div>
+          <!-- Category Card -->
+          <div class="row row-cols-1 row-cols-md-4 g-4 tabcontent ms-auto" id="Category">
+            <div class="col" data-aos="fade-up" data-aos-delay="0">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col contact mt-5 text-white">
-            <h4>Contact</h4>
-            <p>
-              E-mail: icidm2020@lskk.ee.itb.ac.id<br />Phone: +62 22 2500960<br />Fax:
-              +62 22 2534217
-            </p>
+          <!-- Akhir Category Card -->
+          <!-- Early Bird -->
+          <div class="row row-cols-1 row-cols-md-4 g-4 tabcontent ms-auto" id="Early Bird">
+            <div class="col" data-aos="fade-up" data-aos-delay="0">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100">
+                <div class="card-body text-start my-5">
+                  <h5 class="text-white">Author<br />(Non Member)</h5>
+                  <div class="garis mb-2"></div>
+                  <h1 class="card-text text-uppercase">USD 170</h1>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col map mt-5">
-            <h4 class="text-white">Venue</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126751.76522172282!2d107.610659!3d-6.89148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2478e3dcdce37961!2sBandung%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1620719650014!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
+          <!-- Akhir Early Bird -->
         </div>
       </div>
-    </section>
-    <!-- Akhir Venue + Contact -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+      <p>
+        *Including IEEE Proceeding costs, Excluding Journal Publication costs
+      </p>
+      <div class="caption price mt-5">
+        <p>
+          Payment should be made after acceptance by Bank Transfer to:
+          <br />“Bank Nasional Indonesia (BNI)”<br />Cabang (Branch) Perintis
+          Kemerdekaan<br />Virtual Account: 8321066202000041<br />Account
+          Holder Name: ICIDM 2020
+        </p>
+        <br />
+        <p>
+          or if there are problems with Virtual Account<br />Bank Name : Bank
+          Mandiri<br />Swift Code : BMRIIDJA<br />Beneficiary Name/Recipient
+          Name : Universitas Telkom<br />Beneficiary Bank Account No :
+          1310095019917 <br />Branch: Bank Mandiri KCP Bandung Martadinata
+          <br />Bank Address : Jl. R.E. Martadinata No.103. Kota Bandung, Jawa
+          Barat Indonesia 40115 <br />City: Bandung <br />Country: Indonesia
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Pricing -->
+  <!-- Venue + Contact -->
+  <section class="venue">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-5 text-white">
+          <h4>Important Update</h4>
+          <p>
+            Due to the pandemic of COVID-19, the conference will be held
+            online (International Virtual Conference).
+          </p>
+          <h5>Sponsored By:</h5>
+          <div class="mt-4">
+            <img class="mt-3" src="asset/XshSp2yckF.png" alt="" />
+            <img class="mt-3" src="asset/pptik.png" alt="" />
+            <img class="mt-3" src="asset/iha.png" alt="" />
+            <img class="mt-3" src="asset/ias.png" alt="" />
+          </div>
+        </div>
+        <div class="col contact mt-5 text-white">
+          <h4>Contact</h4>
+          <p>
+            E-mail: icidm2020@lskk.ee.itb.ac.id<br />Phone: +62 22 2500960<br />Fax:
+            +62 22 2534217
+          </p>
+        </div>
+        <div class="col map mt-5">
+          <h4 class="text-white">Venue</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126751.76522172282!2d107.610659!3d-6.89148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2478e3dcdce37961!2sBandung%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1620719650014!5m2!1sen!2sus"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Venue + Contact -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+
 </html>
