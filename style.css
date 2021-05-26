@@ -158,6 +158,7 @@ h1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -167,6 +168,7 @@ h1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -179,7 +181,11 @@ h1 {
 
 .venue {
   background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%);
-  margin-top: 900px;
+  margin-top: 200px;
+}
+
+.committee {
+  margin-top: 1000px;
 }
 
 @media only screen and (min-width: 922px) {
@@ -222,16 +228,15 @@ h1 {
     width: 100%;
     opacity: 0;
     transition: 0.2s ease;
-    background: linear-gradient(
-      136.9deg,
-      rgba(237, 58, 141, 0.6) -23.94%,
-      rgba(42, 30, 112, 0.6) 70.53%
-    );
+    background: linear-gradient(136.9deg,
+        rgba(237, 58, 141, 0.6) -23.94%,
+        rgba(42, 30, 112, 0.6) 70.53%);
   }
 
   .card:hover .overlay {
     opacity: 1;
   }
+
   .paper {
     height: 1400px;
     background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%);
@@ -243,5 +248,17 @@ h1 {
 
   .venue {
     margin-top: 0px;
+  }
+
+  .sponsor {
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+  }
+
+  .committee {
+    height: 2100px;
+    margin-top: 10px;
   }
 }
