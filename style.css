@@ -188,6 +188,13 @@ h1 {
   margin-top: 1000px;
 }
 
+.sponsor {
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+}
+
 @media only screen and (min-width: 922px) {
   .hero {
     height: 945px;
@@ -248,13 +255,6 @@ h1 {
 
   .venue {
     margin-top: 0px;
-  }
-
-  .sponsor {
-    width: auto;
-    height: auto;
-    border-radius: 4px;
-    background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
   }
 
   .committee {
