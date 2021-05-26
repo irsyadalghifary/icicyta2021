@@ -189,10 +189,10 @@ h1 {
 }
 
 .sponsor {
+  background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+  border-radius: 4px;
   width: auto;
   height: auto;
-  border-radius: 4px;
-  background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
 }
 
 @media only screen and (min-width: 922px) {
@@ -260,5 +260,12 @@ h1 {
   .committee {
     height: 2100px;
     margin-top: 10px;
+  }
+
+  .sponsor {
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
   }
 }
