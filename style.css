@@ -123,6 +123,10 @@ h1 {
   color: white;
 }
 
+.active {
+  font-weight: 700;
+}
+
 .caption {
   line-height: 28px;
 }
