@@ -45,14 +45,14 @@ h1 {
 }
 
 .about {
-  height: 658px;
+  height: 158px;
   width: auto;
 }
 
 .speakers {
   height: auto;
   width: auto;
-  margin-top: 400px;
+  margin-top: 900px;
   background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%),
     url("asset/smwave.svg") no-repeat center;
   background-blend-mode: screen;
@@ -207,7 +207,6 @@ h1 {
 }
 
 @media only screen and (max-width: 1024px) {
-
   .topics h5,
   .about h1 {
     font-size: 40px;
@@ -219,7 +218,6 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-
   .topics h5,
   .about h1 {
     font-size: 28px;
@@ -260,6 +258,11 @@ h1 {
     padding-top: 20px;
   }
 
+  .about {
+    height: 358px;
+    width: auto;
+  }
+
   .small-text {
     color: #ff75b5;
     font-size: 14px;
@@ -297,9 +300,11 @@ h1 {
     width: 100%;
     opacity: 0;
     transition: 0.2s ease;
-    background: linear-gradient(136.9deg,
-        rgba(237, 58, 141, 0.6) -23.94%,
-        rgba(42, 30, 112, 0.6) 70.53%);
+    background: linear-gradient(
+      136.9deg,
+      rgba(237, 58, 141, 0.6) -23.94%,
+      rgba(42, 30, 112, 0.6) 70.53%
+    );
   }
 
   .card:hover .overlay {
