@@ -206,6 +206,11 @@ h1 {
   height: auto;
 }
 
+.venue iframe {
+  width: 220%;
+  height: 130%;
+}
+
 @media only screen and (max-width: 1024px) {
   .topics h5,
   .about h1 {
@@ -231,6 +236,11 @@ h1 {
     height: auto;
     border-radius: 4px;
     background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+  }
+
+  .venue iframe {
+    width: 100%;
+    height: 130%;
   }
 
   .hero {
