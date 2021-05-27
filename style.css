@@ -6,7 +6,7 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%),
     url("asset/bigwave.svg") no-repeat center 700px;
   background-blend-mode: screen;
-  background-size: 100%;
+  background-size: auto;
   padding-top: 110px;
 }
 
@@ -28,30 +28,35 @@ h1 {
 }
 
 .c-square {
-  width: 145px;
-  height: 145px;
+  width: 175px;
+  height: 80px;
   background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
   border-radius: 8px;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 600;
   padding-top: 20px;
 }
 
 .small-text {
   color: #ff75b5;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   margin-top: -10px;
 }
 
 .about {
-  height: 858px;
+  height: 658px;
+  width: auto;
 }
 
 .speakers {
   height: auto;
+  width: auto;
   margin-top: 400px;
-  background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%),
+    url("asset/smwave.svg") no-repeat center;
+  background-blend-mode: screen;
+  background-size: 100%;
   padding-bottom: 48px;
 }
 
@@ -142,7 +147,8 @@ h1 {
 }
 
 .pricing {
-  height: 1200px;
+  height: 1500px;
+  width: auto;
 }
 
 .garis {
@@ -186,6 +192,7 @@ h1 {
 .venue {
   background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%);
   margin-top: 200px;
+  height: 600px;
 }
 
 .committee {
@@ -199,11 +206,71 @@ h1 {
   height: auto;
 }
 
-@media only screen and (min-width: 922px) {
+@media only screen and (max-width: 1024px) {
+
+  .topics h5,
+  .about h1 {
+    font-size: 40px;
+  }
+
+  .venue {
+    margin-top: 170px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .topics h5,
+  .about h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sponsor {
+    width: 700px;
+    height: auto;
+    border-radius: 4px;
+    background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+  }
+
   .hero {
-    height: 945px;
+    height: 1165px;
     background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%),
-      url("asset/bigwave.svg") no-repeat center 395px;
+      url("asset/bigwave.svg") no-repeat center 870px;
+    background-blend-mode: screen;
+    background-size: 100%;
+    padding-top: 165px;
+  }
+
+  .pricing {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .c-square {
+    width: 145px;
+    height: 145px;
+    background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+    border-radius: 8px;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+
+  .small-text {
+    color: #ff75b5;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+
+  .hero {
+    height: 1045px;
+    background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%),
+      url("asset/bigwave.svg") no-repeat center 650px;
     background-blend-mode: screen;
     background-size: 100%;
     padding-top: 165px;
@@ -218,15 +285,6 @@ h1 {
     font-size: 14px;
     letter-spacing: 0.095em;
     font-weight: 400;
-  }
-
-  .speakers {
-    height: 1000px;
-    background: radial-gradient(50% 50% at 50% 50%, #4c1e70 0%, #2a1e70 100%),
-      url("asset/smwave.svg") no-repeat center;
-    background-blend-mode: screen;
-    background-size: 100%;
-    margin-top: -180px;
   }
 
   .overlay {
@@ -257,10 +315,6 @@ h1 {
     padding-left: 100px;
   }
 
-  .venue {
-    margin-top: 0px;
-  }
-
   .committee {
     height: 2100px;
     margin-top: 10px;
@@ -271,5 +325,13 @@ h1 {
     height: auto;
     border-radius: 4px;
     background: linear-gradient(155.93deg, #7f6aff 11.97%, #1f1a3c 170.08%);
+  }
+
+  .pricing {
+    height: 1200px;
+  }
+
+  .venue {
+    margin-top: 50px;
   }
 }
